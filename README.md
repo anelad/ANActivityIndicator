@@ -255,8 +255,8 @@ This project is under MIT License. Check [LICENSE](https://github.com/anelad/ANA
 # Contribute
 I'm very welcome any contributions. Please read the [CONTRIBUTING](https://github.com/anelad/ANActivityIndicator/CONTRIBUTING.md) file.
 
-- Be sure you fulfill the pull `request template`.
-- Be sure your code passes TravisCI.
+- Be sure you fulfill the `pull request template`.
+- Be sure your code passes TravisCI. (Not implemented yet.)
 
 # Issues
 Please fulfill `issue template` before posting.
