@@ -27,6 +27,7 @@ It looks like gotnovik is not updating his repo and GTMYang's repo focuses on a 
 # Demo
 Check [Pre-Built Animation Types](#pre-built-animation-types) section to see animations' type.
 
+![demo-gif](https://user-images.githubusercontent.com/5767654/34675823-d101708e-f49b-11e7-9b65-94c1a844ba3d.gif)
 # Requirements
 - XCode 9.x or higher
 - Swift 4.x
