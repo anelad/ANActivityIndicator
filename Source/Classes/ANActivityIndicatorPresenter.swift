@@ -19,6 +19,9 @@ internal final class ANActivityIndicatorUIBlocker {
     /// Font of message displayed under activity indicator view.
     let messageFont: UIFont
     
+    ///Messages margin to Animation.
+    let messageTopMargin : CGFloat
+    
     private var animation : ANActivityIndicatorAnimation = ANActivityIndicatorAnimationBallSpinFadeLoader()
     
     /// Animation type.
@@ -35,10 +38,10 @@ internal final class ANActivityIndicatorUIBlocker {
     let padding: CGFloat
     
     /// Display time threshold to actually display UI blocker.
-    let displayTimeThreshold: Int
+    let displayTimeThreshold: NanosecondInterval
     
     /// Minimum display time of UI blocker.
-    let minimumDisplayTime: Int
+    let minimumDisplayTime: NanosecondInterval
     
     /**
      Create information package used to display UI blocker.
@@ -59,14 +62,16 @@ internal final class ANActivityIndicatorUIBlocker {
     init(size: CGSize? = nil,
                 message: String? = nil,
                 messageFont: UIFont? = nil,
+                messageTopMargin : CGFloat? = nil,
                 animationType: ANActivityIndicatorAnimationType? = nil,
                 color: UIColor? = nil,
                 padding: CGFloat? = nil,
-                displayTimeThreshold: Int? = nil,
-                minimumDisplayTime: Int? = nil) {
+                displayTimeThreshold: NanosecondInterval? = nil,
+                minimumDisplayTime: NanosecondInterval? = nil) {
         self.size = size ?? ANActivityIndicatorView.DEFAULT_BLOCKER_SIZE
         self.message = message ?? ANActivityIndicatorView.DEFAULT_BLOCKER_MESSAGE
         self.messageFont = messageFont ?? ANActivityIndicatorView.DEFAULT_BLOCKER_MESSAGE_FONT
+        self.messageTopMargin = messageTopMargin ?? ANActivityIndicatorView.DEFAULT_BLOCKER_MESSAGE_TOP_MARGIN
         if let animationType = animationType{
             self.animationType = animationType
             self.animation = animationType.toAnimation()
@@ -96,14 +101,16 @@ public final class ANActivityIndicatorPresenter {
         _ size: CGSize? = nil,
         message: String? = nil,
         messageFont: UIFont? = nil,
+        messageTopMargin : CGFloat? = nil,
         animationType: ANActivityIndicatorAnimationType? = nil,
         color: UIColor? = nil,
         padding: CGFloat? = nil,
-        displayTimeThreshold: Int? = nil,
-        minimumDisplayTime: Int? = nil) {
+        displayTimeThreshold: NanosecondInterval? = nil,
+        minimumDisplayTime: NanosecondInterval? = nil) {
         let uiBlocker = ANActivityIndicatorUIBlocker(size: size,
                                         message: message,
                                         messageFont: messageFont,
+                                        messageTopMargin : messageTopMargin,
                                         animationType: animationType,
                                         color: color,
                                         padding: padding,
@@ -191,7 +198,7 @@ public final class ANActivityIndicatorPresenter {
             }
             label.center = CGPoint(
                 x: activityIndicatorView.center.x,
-                y: activityIndicatorView.center.y + actualSize.height + label.bounds.size.height / 2 + 8)
+                y: activityIndicatorView.center.y + actualSize.height/2 + label.bounds.size.height / 2 + activityData.messageTopMargin)
             activityContainer.addSubview(label)
         }
         
@@ -211,7 +218,7 @@ public final class ANActivityIndicatorPresenter {
         showTimer = nil
     }
     
-    private func scheduledTimer(_ timeInterval: Int, selector: Selector, data: ANActivityIndicatorUIBlocker?) -> Timer {
+    private func scheduledTimer(_ timeInterval: NanosecondInterval, selector: Selector, data: ANActivityIndicatorUIBlocker?) -> Timer {
         return Timer.scheduledTimer(timeInterval: Double(timeInterval) / 1000,
                                     target: self,
                                     selector: selector,
@@ -219,3 +226,5 @@ public final class ANActivityIndicatorPresenter {
                                     repeats: false)
     }
 }
+
+public typealias NanosecondInterval = TimeInterval

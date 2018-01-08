@@ -13,26 +13,30 @@ import UIKit
 public final class ANActivityIndicatorView: UIView {
     
     /// Default color. Default value is UIColor.whiteColor().
-    public static var DEFAULT_COLOR = UIColor.white
+    internal static var DEFAULT_COLOR = UIColor.white
     
     /// Default padding. Default value is 0.
-    public static var DEFAULT_PADDING: CGFloat = 0
+    internal static var DEFAULT_PADDING: CGFloat = 0
     
     /// Default size of activity indicator view in UI blocker. Default value is 60x60.
-    public static var DEFAULT_BLOCKER_SIZE = CGSize(width: 60, height: 60)
+    internal static var DEFAULT_BLOCKER_SIZE = CGSize(width: 60, height: 60)
     
     /// Default display time threshold to actually display UI blocker. Default value is 0 ms.
-    public static var DEFAULT_BLOCKER_DISPLAY_TIME_THRESHOLD = 0
+    internal static var DEFAULT_BLOCKER_DISPLAY_TIME_THRESHOLD : NanosecondInterval = 0
     
     /// Default minimum display time of UI blocker. Default value is 0 ms.
-    public static var DEFAULT_BLOCKER_MINIMUM_DISPLAY_TIME = 0
+    internal static var DEFAULT_BLOCKER_MINIMUM_DISPLAY_TIME : NanosecondInterval = 0
     
     /// Default message displayed in UI blocker. Default value is nil.
-    public static var DEFAULT_BLOCKER_MESSAGE: String? = nil
+    internal static var DEFAULT_BLOCKER_MESSAGE: String? = nil
     
     /// Default font of message displayed in UI blocker. Default value is bold system font, size 20.
-    public static var DEFAULT_BLOCKER_MESSAGE_FONT = UIFont.boldSystemFont(ofSize: 20)
+    internal static var DEFAULT_BLOCKER_MESSAGE_FONT = UIFont.boldSystemFont(ofSize: 20)
     
+    /// Default top margin of message displayed in UI blocker. Default value is 8
+    internal static var DEFAULT_BLOCKER_MESSAGE_TOP_MARGIN : CGFloat = 8
+    
+    ///Animation of the indicator. Set by animationType. Do not set manually.
     private var animation : ANActivityIndicatorAnimation = ANActivityIndicatorAnimationBallSpinFadeLoader()
     
     /// Animation type.

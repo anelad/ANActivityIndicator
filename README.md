@@ -1,26 +1,268 @@
-UNDER CONST
+ANActivityIndicator
 ============
 
-<!-- An opinionated template for creating a Pod with the following features:
+ANActivityIndicator is pre-built indicator animations library, based on [DGActivityIndicatorView](https://github.com/gontovnik/DGActivityIndicatorView) by [gotnovik](https://github.com/gontovnik) and [GTMActivityIndicatorView](https://github.com/GTMYang/GTMActivityIndicatorView) by [GTMYang](https://github.com/GTMYang) inspired from [loaders.css](https://github.com/ConnorAtherton/loaders.css) by [CONNOR ATHERTON](https://connoratherton.com).
 
-- Git as the source control management system
-- Clean folder structure
-- Project generation
-- MIT license
-- Testing as a standard
-- Turnkey access to Travis CI
-- Also supports Carthage
+## Why did I create ANActivityIndicator in a seperate repo?
 
-## Getting started
+First of all, I don't mean to get all the credits on this project. I did not do anything worthy comparing gotnovik's & GTMYang's works.
 
-There are two reasons for wanting to work on this template, making your own or improving the one for everyone's. In both cases you will want to work with the ruby classes inside the `setup` folder, and the example base template that it works on from inside `template/ios/`. 
+So why did I created ANActivityIndicator in a seperate repo?
 
-## Best practices
+It looks like gotnovik is not updating his repo and GTMYang's repo focuses on a bit different usage approach comparing mine.
 
-The command `pod lib create` aims to be ran along with this guide: http://guides.cocoapods.org/making/using-pod-lib-create.html so any changes of flow should be updated there also.
+## General Differences
 
-It is open to communal input, but adding new features, or new ideas are probably better off being discussed in an issue first. In general we try to think if an average Xcode user is going to use this feature or not, if it's unlikely is it a _very strongly_ encouraged best practice ( ala testing / CI. ) If it's something useful for saving a few minutes every deploy, or isn't easily documented in the guide it is likely to be denied in order to keep this project as simple as possible.
+### between DGActivityIndicatorView
+- Implemented with Swift
 
-## Requirements:
+### between GTMActivityIndicatorView
+- Implemented with Swift 4
+- Ready to use pre-built indicator animations. With GTMActivityIndicatorView, you have to add animations into your project manually.
 
-- CocoaPods 1.0.0+ -->
+## Added Features
+- Custom animations structure (a struct like [NSNotification.Name](https://developer.apple.com/documentation/foundation/nsnotification.name)).
+- Custom loading message margin.
+
+# Demo
+Check [Pre-Built Animation Types](#pre-built-animation-types) section to see animations' type.
+
+# Requirements
+- XCode 9.x or higher
+- Swift 4.x
+- iOS 10.0 or higher
+
+# Installation
+
+## CocoaPods
+
+```ruby
+pod 'ANActivityIndicator'
+```
+
+## Manually
+1. Download the [repo](https://github.com/anelad/ANActivityIndicator/archive/master.zip).
+
+### As Framework
+2. Copy `ANActivityIndicator` and `Source` folders into your workspace directory.
+3. Add `[workspace directory]/ANActivityIndicator/ANActivityIndicator.xcodeproj` into your "workspace".
+4. In `Project settings -> General` add `ANActivityIndicator.framework` to `Embedded Binaries` & `Linked Framework and Libraries`
+
+### As SubProject
+2. Copy `ANActivityIndicator` and `Source` folders into your project directory.
+3. Add `ANActivityIndicator/ANActivityIndicator.xcodeproj` into your "project".
+
+### As Code
+2. Copy `ANActivityIndicator` and `Source` folders into your workspace / project directory.
+3. Add contents of `[workspace / project directory]/Source` folder into your workspace / project.
+
+# Usage
+
+## Import
+If you installed as framework or subproject; first
+```swift
+import ANActivityIndicator
+```
+
+## Initialization
+### As view
+```swift
+let indicator = ANActivityIndicatorView.init(
+        frame: CGrect,
+        animationType: ANAnimationIndicatorType,
+        color: UIColor,
+        padding: CGFloat)
+
+aView.addSubview(indicator)
+```
+ ### For initialization as fullscreen; refer to [Show / Hide Indicator -> As Full-Screen](#as-full-screen) section.
+
+## Show / Hide Indicator
+You have to ways to show ANActivityIndicator
+
+### As view
+```swift
+let indicator = ANActivityIndicatorView.init(...)
+
+indicator.startAnimating()
+
+indicator.stopAnimating()
+```
+
+
+### As Full-Screen
+You can show full-screen indicator in every class.
+
+#### In UIViewController or its subclasses
+```swift
+//default
+showIndicator()
+
+hideIndicator()
+```
+```swift
+//custom
+showIndicator(
+        CGSize,
+        message: String,
+        messageFont: UIFont,
+        messageTopMargin: CGFloat,
+        animationType: ANActivityIndicatorAnimationType,
+        color: UIColor,
+        padding: CGFloat,
+        displayTimeThreshold: TimeIntervalInNanoseconds,
+        minimumDisplayTime: TimeIntervalInNanoseconds)
+
+hideIndicator()
+```
+
+#### In every class
+```swift
+//default
+ANActivityIndicatorPresenter.shared.showIndicator()
+
+ANActivityIndicatorPresenter.shared.hideIndicator()
+```
+```swift
+//custom
+ANActivityIndicatorPresenter.shared.showIndicator(
+        CGSize,
+        message: String,
+        messageFont: UIFont,
+        messageTopMargin: CGFloat,
+        animationType: ANActivityIndicatorAnimationType,
+        color: UIColor,
+        padding: CGFloat,
+        displayTimeThreshold: TimeIntervalInNanoseconds,
+        minimumDisplayTime: TimeIntervalInNanoseconds)
+
+ANActivityIndicatorPresenter.shared.hideIndicator()
+```
+
+## Pre-Built Animation Types
+
+Here are the list of pre-built animations. You can see their look in [Demo](#demo) section. (Ordered with numbers)
+
+1. .audioEqualizer
+2. .ballBeat
+3. .ballClipRotate
+4. .ballClipRotateMultiple
+5. .ballClipRotatePulse
+6. .ballGridBeat
+7. .ballGridPulse
+8. .ballPulse
+9. .ballPulseRise
+10. .ballPulseSync
+11. .ballRotate
+12. .ballRotateChase
+13. .ballScale
+14. .ballScaleMultiple
+15. .ballScaleRipple
+16. .ballScaleRippleMultiple
+17. .ballSpinFadeLoader
+18. .ballTrianglePath
+19. .ballZigZag
+20. .ballZigZagDeflect
+21. .blank
+22. .cubeTransition
+23. .lineScale
+24. .lineScaleParty
+25. .lineScalePulseOut
+26. .lineScalePulseOutRapid
+27. .lineSpinFadeLoader
+28. .orbit
+29. .pacman
+30. .semiCircleSpin
+31. .squareSpin
+32. .triangleSkewSpin
+
+## Custom Animations
+
+ANActivityIndicator has a custom animation structure like `NSNotification.Name`.
+
+ -  First create a class inherits from `ANActivityIndicatorAnimation` protocol:
+ ```swift
+class CustomIndicatorAnimation : ANActivityIndicatorAnimation{
+        required init() { }
+
+        func setUpAnimation(in layer: CALayer, size: CGSize, color: UIColor) {
+                ......
+                //implement your animation
+                //to learn how to implement, check example project or source codes.
+                .....
+        }
+}
+ ```
+
+ - Then add `ANActivityIndicatorAnimationType` for your custom animation:
+
+```swift
+extension ANActivityIndicatorAnimationType{
+        public static let customIndicatorAnimation = ANActivityIndicatorAnimationType.init(animation: CustomIndicatorAnimation.self)
+}
+```
+
+- Now you can call your custom animation via its type:
+```swift
+ANActivityIndicatorAnimationType.customIndicatorAnimation
+```
+
+# Defaults
+
+- Animation type: 
+```swift
+ANActivityIndicatorAnimationType.ballSpinFadeLoader
+```
+- Color of indicator:
+```swift
+UIColor.white
+```
+- Padding of indicator:
+```swift
+CGFloat = 0
+```
+- Message:
+```swift
+String = ""
+```
+- Message font:
+```swift
+UIFont.boldSystemFont(ofSize: 20)
+```
+- Message margin to indicator:
+```swift
+CGFloat = 8
+```
+
+- Display time threshold:
+>Default time that has to be elapsed (between calls of startAnimating() and stopAnimating()) in order to actually display UI blocker. It should be set thinking about what the minimum duration of an activity is to be worth showing it to the user. If the activity ends before this time threshold, then it will not be displayed at all.
+```swift
+CGFloat = 0
+```
+- Minimum display time:
+>Default minimum display time of UI blocker. Its main purpose is to avoid flashes showing and hiding it so fast. For instance, setting it to 200ms will force UI blocker to be shown for at least this time (regardless of calling stopAnimating() ealier).
+```swift
+CGFloat = 0
+```
+- Fullscreen indiator default size:
+```swift
+CGSize.init(width: 60, height: 60)
+```
+
+# Contribute
+I'm very welcome any contributions. Please read the [CONTRIBUTING](https://github.com/anelad/ANActivityIndicator/CONTRIBUTING.md) file.
+
+- Be sure you fulfill the pull `request template`.
+- Be sure your code passes TravisCI.
+
+# Issues
+Please fulfill `issue template` before posting.
+
+# Authors
+- Base project created by [gotnovik](https://github.com/gontovnik).
+- Swift version implemented by [GTMYang](https://github.com/GTMYang).
+- Project inspired from [CONNOR ATHERTON](https://connoratherton.com)'s [project](https://github.com/ConnorAtherton/loaders.css).
+
+#### ANActivityIndicator implemented by
+
+Arda Oğul Üçpınar.

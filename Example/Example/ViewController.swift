@@ -72,6 +72,7 @@ class ViewController: UICollectionViewController {
         //            color: UIColor.white,
         //            padding: 0)
         
+        
         let indicatorView = cell.viewWithTag(1) as! ANActivityIndicatorView
         
         //prepare cell's indicatorView for reuse
@@ -103,25 +104,12 @@ class ViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         //show indicator. this is special for controllers.
         self.showIndicator(
-            self.view.frame.size,
-            message: "Loading...", //FIXME: message not showing
-            messageFont: nil,
-            animationType: animationList[indexPath.row],
-            color: UIColor.white,
-            padding: self.view.frame.size.width / 5 * 4,
-            displayTimeThreshold: 2, //FIXME: not workimg
-            minimumDisplayTime: 5)//FIXME: not working
+            CGSize.init(width: 100, height: 100),
+            message: "Loading...",
+            animationType: animationList[indexPath.row])
+        //if you gonna show indicator from another class than UIViewController (and its subclasses), use singleton.
+        //ANActivityIndicatorPresenter.shared.showIndicator(.....)
         
-        //if you gonna call from AppDelegate or from a clas which is not a controller subclass; you can use shared presenter.
-//        ANActivityIndicatorPresenter.shared.showIndicator(
-//            self.view.frame.size,
-//            message: "Loading...",
-//            messageFont: nil,
-//            animationType: animationList[indexPath.row],
-//            color: UIColor.white,
-//            padding: self.view.frame.size.width / 5 * 4,
-//            displayTimeThreshold: 2,
-//            minimumDisplayTime: 5)
         
         
         //helper for example project to automaticaaly hide indicator.
