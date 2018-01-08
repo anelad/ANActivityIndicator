@@ -249,6 +249,8 @@ CGFloat = 0
 ```swift
 CGSize.init(width: 60, height: 60)
 ```
+# License
+This project is under MIT License. Check [LICENSE](https://github.com/anelad/ANActivityIndicator/LICENSE) file.
 
 # Contribute
 I'm very welcome any contributions. Please read the [CONTRIBUTING](https://github.com/anelad/ANActivityIndicator/CONTRIBUTING.md) file.
