@@ -1,0 +1,686 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1F821C32002815200DEB12B /* ANActivityIndicator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F821B92002815200DEB12B /* ANActivityIndicator.framework */; };
+		A1F821C82002815200DEB12B /* ANActivityIndicatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F821C72002815200DEB12B /* ANActivityIndicatorTests.swift */; };
+		A1F821CA2002815200DEB12B /* ANActivityIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F821BC2002815200DEB12B /* ANActivityIndicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1F822492002828600DEB12B /* ANActivityIndicatorAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8221E2002828600DEB12B /* ANActivityIndicatorAnimation.swift */; };
+		A1F8224A2002828600DEB12B /* ANActivityIndicatorAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8221E2002828600DEB12B /* ANActivityIndicatorAnimation.swift */; };
+		A1F8224B2002828600DEB12B /* ANActivityIndicatorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8221F2002828600DEB12B /* ANActivityIndicatorPresenter.swift */; };
+		A1F8224C2002828600DEB12B /* ANActivityIndicatorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8221F2002828600DEB12B /* ANActivityIndicatorPresenter.swift */; };
+		A1F8224D2002828600DEB12B /* ANActivityIndicatorShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822202002828600DEB12B /* ANActivityIndicatorShape.swift */; };
+		A1F8224E2002828600DEB12B /* ANActivityIndicatorShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822202002828600DEB12B /* ANActivityIndicatorShape.swift */; };
+		A1F8224F2002828600DEB12B /* ANActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822212002828600DEB12B /* ANActivityIndicatorView.swift */; };
+		A1F822502002828600DEB12B /* ANActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822212002828600DEB12B /* ANActivityIndicatorView.swift */; };
+		A1F822532002828600DEB12B /* ANActivityIndicatorViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822232002828600DEB12B /* ANActivityIndicatorViewable.swift */; };
+		A1F822542002828600DEB12B /* ANActivityIndicatorViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822232002828600DEB12B /* ANActivityIndicatorViewable.swift */; };
+		A1F822552002828600DEB12B /* ANActivityIndicatorAnimationAudioEqualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822252002828600DEB12B /* ANActivityIndicatorAnimationAudioEqualizer.swift */; };
+		A1F822562002828600DEB12B /* ANActivityIndicatorAnimationAudioEqualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822252002828600DEB12B /* ANActivityIndicatorAnimationAudioEqualizer.swift */; };
+		A1F822572002828600DEB12B /* ANActivityIndicatorAnimationBallBeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822262002828600DEB12B /* ANActivityIndicatorAnimationBallBeat.swift */; };
+		A1F822582002828600DEB12B /* ANActivityIndicatorAnimationBallBeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822262002828600DEB12B /* ANActivityIndicatorAnimationBallBeat.swift */; };
+		A1F822592002828600DEB12B /* ANActivityIndicatorAnimationBallClipRotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822272002828600DEB12B /* ANActivityIndicatorAnimationBallClipRotate.swift */; };
+		A1F8225A2002828600DEB12B /* ANActivityIndicatorAnimationBallClipRotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822272002828600DEB12B /* ANActivityIndicatorAnimationBallClipRotate.swift */; };
+		A1F8225B2002828600DEB12B /* ANActivityIndicatorAnimationBallClipRotateMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822282002828600DEB12B /* ANActivityIndicatorAnimationBallClipRotateMultiple.swift */; };
+		A1F8225C2002828600DEB12B /* ANActivityIndicatorAnimationBallClipRotateMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822282002828600DEB12B /* ANActivityIndicatorAnimationBallClipRotateMultiple.swift */; };
+		A1F8225D2002828600DEB12B /* ANActivityIndicatorAnimationBallClipRotatePulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822292002828600DEB12B /* ANActivityIndicatorAnimationBallClipRotatePulse.swift */; };
+		A1F8225E2002828600DEB12B /* ANActivityIndicatorAnimationBallClipRotatePulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822292002828600DEB12B /* ANActivityIndicatorAnimationBallClipRotatePulse.swift */; };
+		A1F8225F2002828600DEB12B /* ANActivityIndicatorAnimationBallGridBeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8222A2002828600DEB12B /* ANActivityIndicatorAnimationBallGridBeat.swift */; };
+		A1F822602002828600DEB12B /* ANActivityIndicatorAnimationBallGridBeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8222A2002828600DEB12B /* ANActivityIndicatorAnimationBallGridBeat.swift */; };
+		A1F822612002828600DEB12B /* ANActivityIndicatorAnimationBallGridPulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8222B2002828600DEB12B /* ANActivityIndicatorAnimationBallGridPulse.swift */; };
+		A1F822622002828600DEB12B /* ANActivityIndicatorAnimationBallGridPulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8222B2002828600DEB12B /* ANActivityIndicatorAnimationBallGridPulse.swift */; };
+		A1F822632002828600DEB12B /* ANActivityIndicatorAnimationBallPulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8222C2002828600DEB12B /* ANActivityIndicatorAnimationBallPulse.swift */; };
+		A1F822642002828600DEB12B /* ANActivityIndicatorAnimationBallPulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8222C2002828600DEB12B /* ANActivityIndicatorAnimationBallPulse.swift */; };
+		A1F822652002828600DEB12B /* ANActivityIndicatorAnimationBallPulseRise.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8222D2002828600DEB12B /* ANActivityIndicatorAnimationBallPulseRise.swift */; };
+		A1F822662002828600DEB12B /* ANActivityIndicatorAnimationBallPulseRise.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8222D2002828600DEB12B /* ANActivityIndicatorAnimationBallPulseRise.swift */; };
+		A1F822672002828600DEB12B /* ANActivityIndicatorAnimationBallPulseSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8222E2002828600DEB12B /* ANActivityIndicatorAnimationBallPulseSync.swift */; };
+		A1F822682002828600DEB12B /* ANActivityIndicatorAnimationBallPulseSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8222E2002828600DEB12B /* ANActivityIndicatorAnimationBallPulseSync.swift */; };
+		A1F822692002828600DEB12B /* ANActivityIndicatorAnimationBallRotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8222F2002828600DEB12B /* ANActivityIndicatorAnimationBallRotate.swift */; };
+		A1F8226A2002828600DEB12B /* ANActivityIndicatorAnimationBallRotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8222F2002828600DEB12B /* ANActivityIndicatorAnimationBallRotate.swift */; };
+		A1F8226B2002828600DEB12B /* ANActivityIndicatorAnimationBallRotateChase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822302002828600DEB12B /* ANActivityIndicatorAnimationBallRotateChase.swift */; };
+		A1F8226C2002828600DEB12B /* ANActivityIndicatorAnimationBallRotateChase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822302002828600DEB12B /* ANActivityIndicatorAnimationBallRotateChase.swift */; };
+		A1F8226D2002828600DEB12B /* ANActivityIndicatorAnimationBallScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822312002828600DEB12B /* ANActivityIndicatorAnimationBallScale.swift */; };
+		A1F8226E2002828600DEB12B /* ANActivityIndicatorAnimationBallScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822312002828600DEB12B /* ANActivityIndicatorAnimationBallScale.swift */; };
+		A1F8226F2002828600DEB12B /* ANActivityIndicatorAnimationBallScaleMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822322002828600DEB12B /* ANActivityIndicatorAnimationBallScaleMultiple.swift */; };
+		A1F822702002828600DEB12B /* ANActivityIndicatorAnimationBallScaleMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822322002828600DEB12B /* ANActivityIndicatorAnimationBallScaleMultiple.swift */; };
+		A1F822712002828600DEB12B /* ANActivityIndicatorAnimationBallScaleRipple.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822332002828600DEB12B /* ANActivityIndicatorAnimationBallScaleRipple.swift */; };
+		A1F822722002828600DEB12B /* ANActivityIndicatorAnimationBallScaleRipple.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822332002828600DEB12B /* ANActivityIndicatorAnimationBallScaleRipple.swift */; };
+		A1F822732002828600DEB12B /* ANActivityIndicatorAnimationBallScaleRippleMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822342002828600DEB12B /* ANActivityIndicatorAnimationBallScaleRippleMultiple.swift */; };
+		A1F822742002828600DEB12B /* ANActivityIndicatorAnimationBallScaleRippleMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822342002828600DEB12B /* ANActivityIndicatorAnimationBallScaleRippleMultiple.swift */; };
+		A1F822752002828600DEB12B /* ANActivityIndicatorAnimationBallSpinFadeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822352002828600DEB12B /* ANActivityIndicatorAnimationBallSpinFadeLoader.swift */; };
+		A1F822762002828600DEB12B /* ANActivityIndicatorAnimationBallSpinFadeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822352002828600DEB12B /* ANActivityIndicatorAnimationBallSpinFadeLoader.swift */; };
+		A1F822772002828600DEB12B /* ANActivityIndicatorAnimationBallTrianglePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822362002828600DEB12B /* ANActivityIndicatorAnimationBallTrianglePath.swift */; };
+		A1F822782002828600DEB12B /* ANActivityIndicatorAnimationBallTrianglePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822362002828600DEB12B /* ANActivityIndicatorAnimationBallTrianglePath.swift */; };
+		A1F822792002828600DEB12B /* ANActivityIndicatorAnimationBallZigZag.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822372002828600DEB12B /* ANActivityIndicatorAnimationBallZigZag.swift */; };
+		A1F8227A2002828600DEB12B /* ANActivityIndicatorAnimationBallZigZag.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822372002828600DEB12B /* ANActivityIndicatorAnimationBallZigZag.swift */; };
+		A1F8227B2002828600DEB12B /* ANActivityIndicatorAnimationBallZigZagDeflect.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822382002828600DEB12B /* ANActivityIndicatorAnimationBallZigZagDeflect.swift */; };
+		A1F8227C2002828600DEB12B /* ANActivityIndicatorAnimationBallZigZagDeflect.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822382002828600DEB12B /* ANActivityIndicatorAnimationBallZigZagDeflect.swift */; };
+		A1F8227D2002828600DEB12B /* ANActivityIndicatorAnimationBlank.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822392002828600DEB12B /* ANActivityIndicatorAnimationBlank.swift */; };
+		A1F8227E2002828600DEB12B /* ANActivityIndicatorAnimationBlank.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822392002828600DEB12B /* ANActivityIndicatorAnimationBlank.swift */; };
+		A1F8227F2002828600DEB12B /* ANActivityIndicatorAnimationCubeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8223A2002828600DEB12B /* ANActivityIndicatorAnimationCubeTransition.swift */; };
+		A1F822802002828600DEB12B /* ANActivityIndicatorAnimationCubeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8223A2002828600DEB12B /* ANActivityIndicatorAnimationCubeTransition.swift */; };
+		A1F822812002828600DEB12B /* ANActivityIndicatorAnimationLineScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8223B2002828600DEB12B /* ANActivityIndicatorAnimationLineScale.swift */; };
+		A1F822822002828600DEB12B /* ANActivityIndicatorAnimationLineScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8223B2002828600DEB12B /* ANActivityIndicatorAnimationLineScale.swift */; };
+		A1F822832002828600DEB12B /* ANActivityIndicatorAnimationLineScaleParty.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8223C2002828600DEB12B /* ANActivityIndicatorAnimationLineScaleParty.swift */; };
+		A1F822842002828600DEB12B /* ANActivityIndicatorAnimationLineScaleParty.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8223C2002828600DEB12B /* ANActivityIndicatorAnimationLineScaleParty.swift */; };
+		A1F822852002828600DEB12B /* ANActivityIndicatorAnimationLineScalePulseOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8223D2002828600DEB12B /* ANActivityIndicatorAnimationLineScalePulseOut.swift */; };
+		A1F822862002828600DEB12B /* ANActivityIndicatorAnimationLineScalePulseOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8223D2002828600DEB12B /* ANActivityIndicatorAnimationLineScalePulseOut.swift */; };
+		A1F822872002828600DEB12B /* ANActivityIndicatorAnimationLineScalePulseOutRapid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8223E2002828600DEB12B /* ANActivityIndicatorAnimationLineScalePulseOutRapid.swift */; };
+		A1F822882002828600DEB12B /* ANActivityIndicatorAnimationLineScalePulseOutRapid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8223E2002828600DEB12B /* ANActivityIndicatorAnimationLineScalePulseOutRapid.swift */; };
+		A1F822892002828600DEB12B /* ANActivityIndicatorAnimationLineSpinFadeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8223F2002828600DEB12B /* ANActivityIndicatorAnimationLineSpinFadeLoader.swift */; };
+		A1F8228A2002828600DEB12B /* ANActivityIndicatorAnimationLineSpinFadeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8223F2002828600DEB12B /* ANActivityIndicatorAnimationLineSpinFadeLoader.swift */; };
+		A1F8228B2002828600DEB12B /* ANActivityIndicatorAnimationOrbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822402002828600DEB12B /* ANActivityIndicatorAnimationOrbit.swift */; };
+		A1F8228C2002828600DEB12B /* ANActivityIndicatorAnimationOrbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822402002828600DEB12B /* ANActivityIndicatorAnimationOrbit.swift */; };
+		A1F8228D2002828600DEB12B /* ANActivityIndicatorAnimationPacman.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822412002828600DEB12B /* ANActivityIndicatorAnimationPacman.swift */; };
+		A1F8228E2002828600DEB12B /* ANActivityIndicatorAnimationPacman.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822412002828600DEB12B /* ANActivityIndicatorAnimationPacman.swift */; };
+		A1F8228F2002828600DEB12B /* ANActivityIndicatorAnimationSemiCircleSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822422002828600DEB12B /* ANActivityIndicatorAnimationSemiCircleSpin.swift */; };
+		A1F822902002828600DEB12B /* ANActivityIndicatorAnimationSemiCircleSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822422002828600DEB12B /* ANActivityIndicatorAnimationSemiCircleSpin.swift */; };
+		A1F822912002828600DEB12B /* ANActivityIndicatorAnimationSquareSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822432002828600DEB12B /* ANActivityIndicatorAnimationSquareSpin.swift */; };
+		A1F822922002828600DEB12B /* ANActivityIndicatorAnimationSquareSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822432002828600DEB12B /* ANActivityIndicatorAnimationSquareSpin.swift */; };
+		A1F822932002828600DEB12B /* ANActivityIndicatorAnimationTriangleSkewSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822442002828600DEB12B /* ANActivityIndicatorAnimationTriangleSkewSpin.swift */; };
+		A1F822942002828600DEB12B /* ANActivityIndicatorAnimationTriangleSkewSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822442002828600DEB12B /* ANActivityIndicatorAnimationTriangleSkewSpin.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A1F821C42002815200DEB12B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1F821B02002815200DEB12B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1F821B82002815200DEB12B;
+			remoteInfo = ANActivityIndicator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A1F821B92002815200DEB12B /* ANActivityIndicator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ANActivityIndicator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1F821BC2002815200DEB12B /* ANActivityIndicator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANActivityIndicator.h; sourceTree = "<group>"; };
+		A1F821BD2002815200DEB12B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1F821C22002815200DEB12B /* ANActivityIndicatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ANActivityIndicatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1F821C72002815200DEB12B /* ANActivityIndicatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANActivityIndicatorTests.swift; sourceTree = "<group>"; };
+		A1F821C92002815200DEB12B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1F8221E2002828600DEB12B /* ANActivityIndicatorAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANActivityIndicatorAnimation.swift; sourceTree = "<group>"; };
+		A1F8221F2002828600DEB12B /* ANActivityIndicatorPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANActivityIndicatorPresenter.swift; sourceTree = "<group>"; };
+		A1F822202002828600DEB12B /* ANActivityIndicatorShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANActivityIndicatorShape.swift; sourceTree = "<group>"; };
+		A1F822212002828600DEB12B /* ANActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANActivityIndicatorView.swift; sourceTree = "<group>"; };
+		A1F822232002828600DEB12B /* ANActivityIndicatorViewable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANActivityIndicatorViewable.swift; sourceTree = "<group>"; };
+		A1F822252002828600DEB12B /* ANActivityIndicatorAnimationAudioEqualizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANActivityIndicatorAnimationAudioEqualizer.swift; sourceTree = "<group>"; };
+		A1F822262002828600DEB12B /* ANActivityIndicatorAnimationBallBeat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANActivityIndicatorAnimationBallBeat.swift; sourceTree = "<group>"; };
+		A1F822272002828600DEB12B /* ANActivityIndicatorAnimationBallClipRotate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANActivityIndicatorAnimationBallClipRotate.swift; sourceTree = "<group>"; };
+		A1F822282002828600DEB12B /* ANActivityIndicatorAnimationBallClipRotateMultiple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANActivityIndicatorAnimationBallClipRotateMultiple.swift; sourceTree = "<group>"; };
+		A1F822292002828600DEB12B /* ANActivityIndicatorAnimationBallClipRotatePulse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANActivityIndicatorAnimationBallClipRotatePulse.swift; sourceTree = "<group>"; };
+		A1F8222A2002828600DEB12B /* ANActivityIndicatorAnimationBallGridBeat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANActivityIndicatorAnimationBallGridBeat.swift; sourceTree = "<group>"; };
+		A1F8222B2002828600DEB12B /* ANActivityIndicatorAnimationBallGridPulse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANActivityIndicatorAnimationBallGridPulse.swift; sourceTree = "<group>"; };
+		A1F8222C2002828600DEB12B /* ANActivityIndicatorAnimationBallPulse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANActivityIndicatorAnimationBallPulse.swift; sourceTree = "<group>"; };
+		A1F8222D2002828600DEB12B /* ANActivityIndicatorAnimationBallPulseRise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANActivityIndicatorAnimationBallPulseRise.swift; sourceTree = "<group>"; };
+		A1F8222E2002828600DEB12B /* ANActivityIndicatorAnimationBallPulseSync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANActivityIndicatorAnimationBallPulseSync.swift; sourceTree = "<group>"; };
+		A1F8222F2002828600DEB12B /* ANActivityIndicatorAnimationBallRotate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANActivityIndicatorAnimationBallRotate.swift; sourceTree = "<group>"; };
+		A1F822302002828600DEB12B /* ANActivityIndicatorAnimationBallRotateChase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANActivityIndicatorAnimationBallRotateChase.swift; sourceTree = "<group>"; };
+		A1F822312002828600DEB12B /* ANActivityIndicatorAnimationBallScale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANActivityIndicatorAnimationBallScale.swift; sourceTree = "<group>"; };
+		A1F822322002828600DEB12B /* ANActivityIndicatorAnimationBallScaleMultiple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANActivityIndicatorAnimationBallScaleMultiple.swift; sourceTree = "<group>"; };
+		A1F822332002828600DEB12B /* ANActivityIndicatorAnimationBallScaleRipple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANActivityIndicatorAnimationBallScaleRipple.swift; sourceTree = "<group>"; };
+		A1F822342002828600DEB12B /* ANActivityIndicatorAnimationBallScaleRippleMultiple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANActivityIndicatorAnimationBallScaleRippleMultiple.swift; sourceTree = "<group>"; };
+		A1F822352002828600DEB12B /* ANActivityIndicatorAnimationBallSpinFadeLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANActivityIndicatorAnimationBallSpinFadeLoader.swift; sourceTree = "<group>"; };
+		A1F822362002828600DEB12B /* ANActivityIndicatorAnimationBallTrianglePath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANActivityIndicatorAnimationBallTrianglePath.swift; sourceTree = "<group>"; };
+		A1F822372002828600DEB12B /* ANActivityIndicatorAnimationBallZigZag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANActivityIndicatorAnimationBallZigZag.swift; sourceTree = "<group>"; };
+		A1F822382002828600DEB12B /* ANActivityIndicatorAnimationBallZigZagDeflect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANActivityIndicatorAnimationBallZigZagDeflect.swift; sourceTree = "<group>"; };
+		A1F822392002828600DEB12B /* ANActivityIndicatorAnimationBlank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANActivityIndicatorAnimationBlank.swift; sourceTree = "<group>"; };
+		A1F8223A2002828600DEB12B /* ANActivityIndicatorAnimationCubeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANActivityIndicatorAnimationCubeTransition.swift; sourceTree = "<group>"; };
+		A1F8223B2002828600DEB12B /* ANActivityIndicatorAnimationLineScale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANActivityIndicatorAnimationLineScale.swift; sourceTree = "<group>"; };
+		A1F8223C2002828600DEB12B /* ANActivityIndicatorAnimationLineScaleParty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANActivityIndicatorAnimationLineScaleParty.swift; sourceTree = "<group>"; };
+		A1F8223D2002828600DEB12B /* ANActivityIndicatorAnimationLineScalePulseOut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANActivityIndicatorAnimationLineScalePulseOut.swift; sourceTree = "<group>"; };
+		A1F8223E2002828600DEB12B /* ANActivityIndicatorAnimationLineScalePulseOutRapid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANActivityIndicatorAnimationLineScalePulseOutRapid.swift; sourceTree = "<group>"; };
+		A1F8223F2002828600DEB12B /* ANActivityIndicatorAnimationLineSpinFadeLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANActivityIndicatorAnimationLineSpinFadeLoader.swift; sourceTree = "<group>"; };
+		A1F822402002828600DEB12B /* ANActivityIndicatorAnimationOrbit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANActivityIndicatorAnimationOrbit.swift; sourceTree = "<group>"; };
+		A1F822412002828600DEB12B /* ANActivityIndicatorAnimationPacman.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANActivityIndicatorAnimationPacman.swift; sourceTree = "<group>"; };
+		A1F822422002828600DEB12B /* ANActivityIndicatorAnimationSemiCircleSpin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANActivityIndicatorAnimationSemiCircleSpin.swift; sourceTree = "<group>"; };
+		A1F822432002828600DEB12B /* ANActivityIndicatorAnimationSquareSpin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANActivityIndicatorAnimationSquareSpin.swift; sourceTree = "<group>"; };
+		A1F822442002828600DEB12B /* ANActivityIndicatorAnimationTriangleSkewSpin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANActivityIndicatorAnimationTriangleSkewSpin.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1F821B52002815200DEB12B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1F821BF2002815200DEB12B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1F821C32002815200DEB12B /* ANActivityIndicator.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1F821AF2002815200DEB12B = {
+			isa = PBXGroup;
+			children = (
+				A1F822192002828600DEB12B /* Source */,
+				A1F821BB2002815200DEB12B /* ANActivityIndicator */,
+				A1F821C62002815200DEB12B /* ANActivityIndicatorTests */,
+				A1F821BA2002815200DEB12B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1F821BA2002815200DEB12B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1F821B92002815200DEB12B /* ANActivityIndicator.framework */,
+				A1F821C22002815200DEB12B /* ANActivityIndicatorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1F821BB2002815200DEB12B /* ANActivityIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				A1F821BC2002815200DEB12B /* ANActivityIndicator.h */,
+				A1F821BD2002815200DEB12B /* Info.plist */,
+			);
+			path = ANActivityIndicator;
+			sourceTree = "<group>";
+		};
+		A1F821C62002815200DEB12B /* ANActivityIndicatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				A1F821C72002815200DEB12B /* ANActivityIndicatorTests.swift */,
+				A1F821C92002815200DEB12B /* Info.plist */,
+			);
+			path = ANActivityIndicatorTests;
+			sourceTree = "<group>";
+		};
+		A1F822192002828600DEB12B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A1F8221C2002828600DEB12B /* Classes */,
+			);
+			name = Source;
+			path = ../Source;
+			sourceTree = "<group>";
+		};
+		A1F8221C2002828600DEB12B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A1F8221E2002828600DEB12B /* ANActivityIndicatorAnimation.swift */,
+				A1F8221F2002828600DEB12B /* ANActivityIndicatorPresenter.swift */,
+				A1F822202002828600DEB12B /* ANActivityIndicatorShape.swift */,
+				A1F822212002828600DEB12B /* ANActivityIndicatorView.swift */,
+				A1F822232002828600DEB12B /* ANActivityIndicatorViewable.swift */,
+				A1F822242002828600DEB12B /* Animations */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A1F822242002828600DEB12B /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				A1F822252002828600DEB12B /* ANActivityIndicatorAnimationAudioEqualizer.swift */,
+				A1F822262002828600DEB12B /* ANActivityIndicatorAnimationBallBeat.swift */,
+				A1F822272002828600DEB12B /* ANActivityIndicatorAnimationBallClipRotate.swift */,
+				A1F822282002828600DEB12B /* ANActivityIndicatorAnimationBallClipRotateMultiple.swift */,
+				A1F822292002828600DEB12B /* ANActivityIndicatorAnimationBallClipRotatePulse.swift */,
+				A1F8222A2002828600DEB12B /* ANActivityIndicatorAnimationBallGridBeat.swift */,
+				A1F8222B2002828600DEB12B /* ANActivityIndicatorAnimationBallGridPulse.swift */,
+				A1F8222C2002828600DEB12B /* ANActivityIndicatorAnimationBallPulse.swift */,
+				A1F8222D2002828600DEB12B /* ANActivityIndicatorAnimationBallPulseRise.swift */,
+				A1F8222E2002828600DEB12B /* ANActivityIndicatorAnimationBallPulseSync.swift */,
+				A1F8222F2002828600DEB12B /* ANActivityIndicatorAnimationBallRotate.swift */,
+				A1F822302002828600DEB12B /* ANActivityIndicatorAnimationBallRotateChase.swift */,
+				A1F822312002828600DEB12B /* ANActivityIndicatorAnimationBallScale.swift */,
+				A1F822322002828600DEB12B /* ANActivityIndicatorAnimationBallScaleMultiple.swift */,
+				A1F822332002828600DEB12B /* ANActivityIndicatorAnimationBallScaleRipple.swift */,
+				A1F822342002828600DEB12B /* ANActivityIndicatorAnimationBallScaleRippleMultiple.swift */,
+				A1F822352002828600DEB12B /* ANActivityIndicatorAnimationBallSpinFadeLoader.swift */,
+				A1F822362002828600DEB12B /* ANActivityIndicatorAnimationBallTrianglePath.swift */,
+				A1F822372002828600DEB12B /* ANActivityIndicatorAnimationBallZigZag.swift */,
+				A1F822382002828600DEB12B /* ANActivityIndicatorAnimationBallZigZagDeflect.swift */,
+				A1F822392002828600DEB12B /* ANActivityIndicatorAnimationBlank.swift */,
+				A1F8223A2002828600DEB12B /* ANActivityIndicatorAnimationCubeTransition.swift */,
+				A1F8223B2002828600DEB12B /* ANActivityIndicatorAnimationLineScale.swift */,
+				A1F8223C2002828600DEB12B /* ANActivityIndicatorAnimationLineScaleParty.swift */,
+				A1F8223D2002828600DEB12B /* ANActivityIndicatorAnimationLineScalePulseOut.swift */,
+				A1F8223E2002828600DEB12B /* ANActivityIndicatorAnimationLineScalePulseOutRapid.swift */,
+				A1F8223F2002828600DEB12B /* ANActivityIndicatorAnimationLineSpinFadeLoader.swift */,
+				A1F822402002828600DEB12B /* ANActivityIndicatorAnimationOrbit.swift */,
+				A1F822412002828600DEB12B /* ANActivityIndicatorAnimationPacman.swift */,
+				A1F822422002828600DEB12B /* ANActivityIndicatorAnimationSemiCircleSpin.swift */,
+				A1F822432002828600DEB12B /* ANActivityIndicatorAnimationSquareSpin.swift */,
+				A1F822442002828600DEB12B /* ANActivityIndicatorAnimationTriangleSkewSpin.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A1F821B62002815200DEB12B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1F821CA2002815200DEB12B /* ANActivityIndicator.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A1F821B82002815200DEB12B /* ANActivityIndicator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1F821CD2002815200DEB12B /* Build configuration list for PBXNativeTarget "ANActivityIndicator" */;
+			buildPhases = (
+				A1F821B42002815200DEB12B /* Sources */,
+				A1F821B52002815200DEB12B /* Frameworks */,
+				A1F821B62002815200DEB12B /* Headers */,
+				A1F821B72002815200DEB12B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ANActivityIndicator;
+			productName = ANActivityIndicator;
+			productReference = A1F821B92002815200DEB12B /* ANActivityIndicator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A1F821C12002815200DEB12B /* ANActivityIndicatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1F821D02002815200DEB12B /* Build configuration list for PBXNativeTarget "ANActivityIndicatorTests" */;
+			buildPhases = (
+				A1F821BE2002815200DEB12B /* Sources */,
+				A1F821BF2002815200DEB12B /* Frameworks */,
+				A1F821C02002815200DEB12B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1F821C52002815200DEB12B /* PBXTargetDependency */,
+			);
+			name = ANActivityIndicatorTests;
+			productName = ANActivityIndicatorTests;
+			productReference = A1F821C22002815200DEB12B /* ANActivityIndicatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1F821B02002815200DEB12B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Avorna Yazılım Ltd. Şti.";
+				TargetAttributes = {
+					A1F821B82002815200DEB12B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					A1F821C12002815200DEB12B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A1F821B32002815200DEB12B /* Build configuration list for PBXProject "ANActivityIndicator" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A1F821AF2002815200DEB12B;
+			productRefGroup = A1F821BA2002815200DEB12B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1F821B82002815200DEB12B /* ANActivityIndicator */,
+				A1F821C12002815200DEB12B /* ANActivityIndicatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1F821B72002815200DEB12B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1F821C02002815200DEB12B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1F821B42002815200DEB12B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1F822712002828600DEB12B /* ANActivityIndicatorAnimationBallScaleRipple.swift in Sources */,
+				A1F8227B2002828600DEB12B /* ANActivityIndicatorAnimationBallZigZagDeflect.swift in Sources */,
+				A1F8227F2002828600DEB12B /* ANActivityIndicatorAnimationCubeTransition.swift in Sources */,
+				A1F8228B2002828600DEB12B /* ANActivityIndicatorAnimationOrbit.swift in Sources */,
+				A1F8225B2002828600DEB12B /* ANActivityIndicatorAnimationBallClipRotateMultiple.swift in Sources */,
+				A1F822532002828600DEB12B /* ANActivityIndicatorViewable.swift in Sources */,
+				A1F822612002828600DEB12B /* ANActivityIndicatorAnimationBallGridPulse.swift in Sources */,
+				A1F822772002828600DEB12B /* ANActivityIndicatorAnimationBallTrianglePath.swift in Sources */,
+				A1F822692002828600DEB12B /* ANActivityIndicatorAnimationBallRotate.swift in Sources */,
+				A1F8225D2002828600DEB12B /* ANActivityIndicatorAnimationBallClipRotatePulse.swift in Sources */,
+				A1F822672002828600DEB12B /* ANActivityIndicatorAnimationBallPulseSync.swift in Sources */,
+				A1F822792002828600DEB12B /* ANActivityIndicatorAnimationBallZigZag.swift in Sources */,
+				A1F8226F2002828600DEB12B /* ANActivityIndicatorAnimationBallScaleMultiple.swift in Sources */,
+				A1F8224F2002828600DEB12B /* ANActivityIndicatorView.swift in Sources */,
+				A1F822872002828600DEB12B /* ANActivityIndicatorAnimationLineScalePulseOutRapid.swift in Sources */,
+				A1F822752002828600DEB12B /* ANActivityIndicatorAnimationBallSpinFadeLoader.swift in Sources */,
+				A1F8224D2002828600DEB12B /* ANActivityIndicatorShape.swift in Sources */,
+				A1F8227D2002828600DEB12B /* ANActivityIndicatorAnimationBlank.swift in Sources */,
+				A1F822912002828600DEB12B /* ANActivityIndicatorAnimationSquareSpin.swift in Sources */,
+				A1F822592002828600DEB12B /* ANActivityIndicatorAnimationBallClipRotate.swift in Sources */,
+				A1F822832002828600DEB12B /* ANActivityIndicatorAnimationLineScaleParty.swift in Sources */,
+				A1F822812002828600DEB12B /* ANActivityIndicatorAnimationLineScale.swift in Sources */,
+				A1F822552002828600DEB12B /* ANActivityIndicatorAnimationAudioEqualizer.swift in Sources */,
+				A1F822852002828600DEB12B /* ANActivityIndicatorAnimationLineScalePulseOut.swift in Sources */,
+				A1F822572002828600DEB12B /* ANActivityIndicatorAnimationBallBeat.swift in Sources */,
+				A1F8224B2002828600DEB12B /* ANActivityIndicatorPresenter.swift in Sources */,
+				A1F8228F2002828600DEB12B /* ANActivityIndicatorAnimationSemiCircleSpin.swift in Sources */,
+				A1F822932002828600DEB12B /* ANActivityIndicatorAnimationTriangleSkewSpin.swift in Sources */,
+				A1F822492002828600DEB12B /* ANActivityIndicatorAnimation.swift in Sources */,
+				A1F8226D2002828600DEB12B /* ANActivityIndicatorAnimationBallScale.swift in Sources */,
+				A1F8225F2002828600DEB12B /* ANActivityIndicatorAnimationBallGridBeat.swift in Sources */,
+				A1F8228D2002828600DEB12B /* ANActivityIndicatorAnimationPacman.swift in Sources */,
+				A1F822732002828600DEB12B /* ANActivityIndicatorAnimationBallScaleRippleMultiple.swift in Sources */,
+				A1F8226B2002828600DEB12B /* ANActivityIndicatorAnimationBallRotateChase.swift in Sources */,
+				A1F822892002828600DEB12B /* ANActivityIndicatorAnimationLineSpinFadeLoader.swift in Sources */,
+				A1F822632002828600DEB12B /* ANActivityIndicatorAnimationBallPulse.swift in Sources */,
+				A1F822652002828600DEB12B /* ANActivityIndicatorAnimationBallPulseRise.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1F821BE2002815200DEB12B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1F8228C2002828600DEB12B /* ANActivityIndicatorAnimationOrbit.swift in Sources */,
+				A1F822722002828600DEB12B /* ANActivityIndicatorAnimationBallScaleRipple.swift in Sources */,
+				A1F822902002828600DEB12B /* ANActivityIndicatorAnimationSemiCircleSpin.swift in Sources */,
+				A1F822562002828600DEB12B /* ANActivityIndicatorAnimationAudioEqualizer.swift in Sources */,
+				A1F8224C2002828600DEB12B /* ANActivityIndicatorPresenter.swift in Sources */,
+				A1F822922002828600DEB12B /* ANActivityIndicatorAnimationSquareSpin.swift in Sources */,
+				A1F822822002828600DEB12B /* ANActivityIndicatorAnimationLineScale.swift in Sources */,
+				A1F822502002828600DEB12B /* ANActivityIndicatorView.swift in Sources */,
+				A1F822762002828600DEB12B /* ANActivityIndicatorAnimationBallSpinFadeLoader.swift in Sources */,
+				A1F8227A2002828600DEB12B /* ANActivityIndicatorAnimationBallZigZag.swift in Sources */,
+				A1F822622002828600DEB12B /* ANActivityIndicatorAnimationBallGridPulse.swift in Sources */,
+				A1F8225E2002828600DEB12B /* ANActivityIndicatorAnimationBallClipRotatePulse.swift in Sources */,
+				A1F822942002828600DEB12B /* ANActivityIndicatorAnimationTriangleSkewSpin.swift in Sources */,
+				A1F8226E2002828600DEB12B /* ANActivityIndicatorAnimationBallScale.swift in Sources */,
+				A1F8228A2002828600DEB12B /* ANActivityIndicatorAnimationLineSpinFadeLoader.swift in Sources */,
+				A1F822582002828600DEB12B /* ANActivityIndicatorAnimationBallBeat.swift in Sources */,
+				A1F822642002828600DEB12B /* ANActivityIndicatorAnimationBallPulse.swift in Sources */,
+				A1F8224A2002828600DEB12B /* ANActivityIndicatorAnimation.swift in Sources */,
+				A1F822702002828600DEB12B /* ANActivityIndicatorAnimationBallScaleMultiple.swift in Sources */,
+				A1F821C82002815200DEB12B /* ANActivityIndicatorTests.swift in Sources */,
+				A1F822662002828600DEB12B /* ANActivityIndicatorAnimationBallPulseRise.swift in Sources */,
+				A1F8224E2002828600DEB12B /* ANActivityIndicatorShape.swift in Sources */,
+				A1F822802002828600DEB12B /* ANActivityIndicatorAnimationCubeTransition.swift in Sources */,
+				A1F8225C2002828600DEB12B /* ANActivityIndicatorAnimationBallClipRotateMultiple.swift in Sources */,
+				A1F822682002828600DEB12B /* ANActivityIndicatorAnimationBallPulseSync.swift in Sources */,
+				A1F8226A2002828600DEB12B /* ANActivityIndicatorAnimationBallRotate.swift in Sources */,
+				A1F8227C2002828600DEB12B /* ANActivityIndicatorAnimationBallZigZagDeflect.swift in Sources */,
+				A1F8225A2002828600DEB12B /* ANActivityIndicatorAnimationBallClipRotate.swift in Sources */,
+				A1F822862002828600DEB12B /* ANActivityIndicatorAnimationLineScalePulseOut.swift in Sources */,
+				A1F822782002828600DEB12B /* ANActivityIndicatorAnimationBallTrianglePath.swift in Sources */,
+				A1F8228E2002828600DEB12B /* ANActivityIndicatorAnimationPacman.swift in Sources */,
+				A1F822742002828600DEB12B /* ANActivityIndicatorAnimationBallScaleRippleMultiple.swift in Sources */,
+				A1F822602002828600DEB12B /* ANActivityIndicatorAnimationBallGridBeat.swift in Sources */,
+				A1F8226C2002828600DEB12B /* ANActivityIndicatorAnimationBallRotateChase.swift in Sources */,
+				A1F822842002828600DEB12B /* ANActivityIndicatorAnimationLineScaleParty.swift in Sources */,
+				A1F822542002828600DEB12B /* ANActivityIndicatorViewable.swift in Sources */,
+				A1F822882002828600DEB12B /* ANActivityIndicatorAnimationLineScalePulseOutRapid.swift in Sources */,
+				A1F8227E2002828600DEB12B /* ANActivityIndicatorAnimationBlank.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A1F821C52002815200DEB12B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1F821B82002815200DEB12B /* ANActivityIndicator */;
+			targetProxy = A1F821C42002815200DEB12B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A1F821CB2002815200DEB12B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A1F821CC2002815200DEB12B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A1F821CE2002815200DEB12B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = W9ZVWEMJZF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ANActivityIndicator/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.avorna.ANActivityIndicator;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A1F821CF2002815200DEB12B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = W9ZVWEMJZF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ANActivityIndicator/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.avorna.ANActivityIndicator;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A1F821D12002815200DEB12B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W9ZVWEMJZF;
+				INFOPLIST_FILE = ANActivityIndicatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.avorna.ANActivityIndicatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A1F821D22002815200DEB12B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W9ZVWEMJZF;
+				INFOPLIST_FILE = ANActivityIndicatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.avorna.ANActivityIndicatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1F821B32002815200DEB12B /* Build configuration list for PBXProject "ANActivityIndicator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1F821CB2002815200DEB12B /* Debug */,
+				A1F821CC2002815200DEB12B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1F821CD2002815200DEB12B /* Build configuration list for PBXNativeTarget "ANActivityIndicator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1F821CE2002815200DEB12B /* Debug */,
+				A1F821CF2002815200DEB12B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1F821D02002815200DEB12B /* Build configuration list for PBXNativeTarget "ANActivityIndicatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1F821D12002815200DEB12B /* Debug */,
+				A1F821D22002815200DEB12B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1F821B02002815200DEB12B /* Project object */;
+}
