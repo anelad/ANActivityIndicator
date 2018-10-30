@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ANActivityIndicator'
-  s.version          = '1.0.0'
+  s.version          = '1.1.0'
   s.summary          = 'ANActivityIndicator is pre-built indicator animations library written in Swift4.'
 
   s.description      = <<-DESC
@@ -15,7 +15,7 @@ ANActivityIndicator is pre-built indicator animations library written in Swift4.
 
   s.ios.deployment_target = '10.0'
   s.platform = :ios, '10.0'
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.2' }
 
   s.source_files = 'Source/Classes/**/*'
 

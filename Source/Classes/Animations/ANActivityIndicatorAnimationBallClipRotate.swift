@@ -31,7 +31,7 @@ class ANActivityIndicatorAnimationBallClipRotate: ANActivityIndicatorAnimation {
         let animation = CAAnimationGroup()
         
         animation.animations = [scaleAnimation, rotateAnimation]
-        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
+      animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
         animation.duration = duration
         animation.repeatCount = HUGE
         animation.isRemovedOnCompletion = false

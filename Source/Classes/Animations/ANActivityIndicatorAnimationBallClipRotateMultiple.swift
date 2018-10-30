@@ -16,7 +16,7 @@ class ANActivityIndicatorAnimationBallClipRotateMultiple: ANActivityIndicatorAni
         let bigCircleSize: CGFloat = size.width
         let smallCircleSize: CGFloat = size.width / 2
         let longDuration: CFTimeInterval = 1
-        let timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+      let timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
         
         circleOf(shape: .ringTwoHalfHorizontal,
                  duration: longDuration,

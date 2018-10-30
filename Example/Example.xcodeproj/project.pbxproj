@@ -12,29 +12,10 @@
 		A1F821E52002817000DEB12B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F821E32002817000DEB12B /* Main.storyboard */; };
 		A1F821E72002817000DEB12B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F821E62002817000DEB12B /* Assets.xcassets */; };
 		A1F821EA2002817000DEB12B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F821E82002817000DEB12B /* LaunchScreen.storyboard */; };
-		A1F821F52002817000DEB12B /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F821F42002817000DEB12B /* ExampleTests.swift */; };
-		A1F822002002817000DEB12B /* ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F821FF2002817000DEB12B /* ExampleUITests.swift */; };
 		A1F82217200281A000DEB12B /* ANActivityIndicator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F8220F2002817C00DEB12B /* ANActivityIndicator.framework */; };
 		A1F82218200281A000DEB12B /* ANActivityIndicator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1F8220F2002817C00DEB12B /* ANActivityIndicator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A1F822962002ACA900DEB12B /* CustomAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F822952002ACA900DEB12B /* CustomAnimation.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		A1F821F12002817000DEB12B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1F821D42002817000DEB12B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A1F821DB2002817000DEB12B;
-			remoteInfo = Example;
-		};
-		A1F821FC2002817000DEB12B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1F821D42002817000DEB12B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A1F821DB2002817000DEB12B;
-			remoteInfo = Example;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		A1F822162002819600DEB12B /* Embed Frameworks */ = {
@@ -58,12 +39,6 @@
 		A1F821E62002817000DEB12B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1F821E92002817000DEB12B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1F821EB2002817000DEB12B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A1F821F02002817000DEB12B /* ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1F821F42002817000DEB12B /* ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTests.swift; sourceTree = "<group>"; };
-		A1F821F62002817000DEB12B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A1F821FB2002817000DEB12B /* ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1F821FF2002817000DEB12B /* ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleUITests.swift; sourceTree = "<group>"; };
-		A1F822012002817000DEB12B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1F8220F2002817C00DEB12B /* ANActivityIndicator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ANActivityIndicator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F822952002ACA900DEB12B /* CustomAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,20 +52,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A1F821ED2002817000DEB12B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A1F821F82002817000DEB12B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -98,8 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				A1F821DE2002817000DEB12B /* Example */,
-				A1F821F32002817000DEB12B /* ExampleTests */,
-				A1F821FE2002817000DEB12B /* ExampleUITests */,
 				A1F821DD2002817000DEB12B /* Products */,
 				A1F8220D2002817C00DEB12B /* Frameworks */,
 			);
@@ -109,8 +68,6 @@
 			isa = PBXGroup;
 			children = (
 				A1F821DC2002817000DEB12B /* Example.app */,
-				A1F821F02002817000DEB12B /* ExampleTests.xctest */,
-				A1F821FB2002817000DEB12B /* ExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,24 +84,6 @@
 				A1F821EB2002817000DEB12B /* Info.plist */,
 			);
 			path = Example;
-			sourceTree = "<group>";
-		};
-		A1F821F32002817000DEB12B /* ExampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				A1F821F42002817000DEB12B /* ExampleTests.swift */,
-				A1F821F62002817000DEB12B /* Info.plist */,
-			);
-			path = ExampleTests;
-			sourceTree = "<group>";
-		};
-		A1F821FE2002817000DEB12B /* ExampleUITests */ = {
-			isa = PBXGroup;
-			children = (
-				A1F821FF2002817000DEB12B /* ExampleUITests.swift */,
-				A1F822012002817000DEB12B /* Info.plist */,
-			);
-			path = ExampleUITests;
 			sourceTree = "<group>";
 		};
 		A1F8220D2002817C00DEB12B /* Frameworks */ = {
@@ -176,42 +115,6 @@
 			productReference = A1F821DC2002817000DEB12B /* Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A1F821EF2002817000DEB12B /* ExampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A1F822072002817000DEB12B /* Build configuration list for PBXNativeTarget "ExampleTests" */;
-			buildPhases = (
-				A1F821EC2002817000DEB12B /* Sources */,
-				A1F821ED2002817000DEB12B /* Frameworks */,
-				A1F821EE2002817000DEB12B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A1F821F22002817000DEB12B /* PBXTargetDependency */,
-			);
-			name = ExampleTests;
-			productName = ExampleTests;
-			productReference = A1F821F02002817000DEB12B /* ExampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		A1F821FA2002817000DEB12B /* ExampleUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A1F8220A2002817000DEB12B /* Build configuration list for PBXNativeTarget "ExampleUITests" */;
-			buildPhases = (
-				A1F821F72002817000DEB12B /* Sources */,
-				A1F821F82002817000DEB12B /* Frameworks */,
-				A1F821F92002817000DEB12B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A1F821FD2002817000DEB12B /* PBXTargetDependency */,
-			);
-			name = ExampleUITests;
-			productName = ExampleUITests;
-			productReference = A1F821FB2002817000DEB12B /* ExampleUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -219,22 +122,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Avorna Yazılım Ltd. Şti.";
 				TargetAttributes = {
 					A1F821DB2002817000DEB12B = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
-					};
-					A1F821EF2002817000DEB12B = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = A1F821DB2002817000DEB12B;
-					};
-					A1F821FA2002817000DEB12B = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = A1F821DB2002817000DEB12B;
 					};
 				};
 			};
@@ -252,8 +145,6 @@
 			projectRoot = "";
 			targets = (
 				A1F821DB2002817000DEB12B /* Example */,
-				A1F821EF2002817000DEB12B /* ExampleTests */,
-				A1F821FA2002817000DEB12B /* ExampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -266,20 +157,6 @@
 				A1F821EA2002817000DEB12B /* LaunchScreen.storyboard in Resources */,
 				A1F821E72002817000DEB12B /* Assets.xcassets in Resources */,
 				A1F821E52002817000DEB12B /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A1F821EE2002817000DEB12B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A1F821F92002817000DEB12B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,36 +173,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A1F821EC2002817000DEB12B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A1F821F52002817000DEB12B /* ExampleTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A1F821F72002817000DEB12B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A1F822002002817000DEB12B /* ExampleUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		A1F821F22002817000DEB12B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A1F821DB2002817000DEB12B /* Example */;
-			targetProxy = A1F821F12002817000DEB12B /* PBXContainerItemProxy */;
-		};
-		A1F821FD2002817000DEB12B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A1F821DB2002817000DEB12B /* Example */;
-			targetProxy = A1F821FC2002817000DEB12B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A1F821E32002817000DEB12B /* Main.storyboard */ = {
@@ -361,6 +209,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -368,6 +217,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -418,6 +268,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -425,6 +276,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -465,7 +317,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.avorna.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -481,74 +333,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.avorna.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		A1F822082002817000DEB12B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W9ZVWEMJZF;
-				INFOPLIST_FILE = ExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.avorna.ExampleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
-			};
-			name = Debug;
-		};
-		A1F822092002817000DEB12B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W9ZVWEMJZF;
-				INFOPLIST_FILE = ExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.avorna.ExampleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
-			};
-			name = Release;
-		};
-		A1F8220B2002817000DEB12B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W9ZVWEMJZF;
-				INFOPLIST_FILE = ExampleUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.avorna.ExampleUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Example;
-			};
-			name = Debug;
-		};
-		A1F8220C2002817000DEB12B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W9ZVWEMJZF;
-				INFOPLIST_FILE = ExampleUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.avorna.ExampleUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Example;
 			};
 			name = Release;
 		};
@@ -569,24 +355,6 @@
 			buildConfigurations = (
 				A1F822052002817000DEB12B /* Debug */,
 				A1F822062002817000DEB12B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A1F822072002817000DEB12B /* Build configuration list for PBXNativeTarget "ExampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A1F822082002817000DEB12B /* Debug */,
-				A1F822092002817000DEB12B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A1F8220A2002817000DEB12B /* Build configuration list for PBXNativeTarget "ExampleUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A1F8220B2002817000DEB12B /* Debug */,
-				A1F8220C2002817000DEB12B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

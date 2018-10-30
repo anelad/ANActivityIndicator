@@ -34,7 +34,7 @@ class ANActivityIndicatorAnimationOrbit: ANActivityIndicatorAnimation {
         let scaleAnimation = CAKeyframeAnimation(keyPath: "transform.scale")
         
         scaleAnimation.keyTimes = [0, 0.45, 0.45, 1]
-        scaleAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
+      scaleAnimation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
         scaleAnimation.values = [0, 0, 1.3, 2]
         scaleAnimation.duration = duration
         
@@ -43,7 +43,7 @@ class ANActivityIndicatorAnimationOrbit: ANActivityIndicatorAnimation {
         let timingFunction = CAMediaTimingFunction(controlPoints: 0.19, 1, 0.22, 1)
         
         opacityAnimation.keyTimes = [0, 0.45, 1]
-        scaleAnimation.timingFunctions = [CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear), timingFunction]
+      scaleAnimation.timingFunctions = [CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear), timingFunction]
         opacityAnimation.values = [0.8, 0.8, 0]
         opacityAnimation.duration = duration
         
@@ -72,7 +72,7 @@ class ANActivityIndicatorAnimationOrbit: ANActivityIndicatorAnimation {
         let scaleAnimation = CAKeyframeAnimation(keyPath: "transform.scale")
         
         scaleAnimation.keyTimes = [0, 0.55, 0.55, 1]
-        scaleAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
+      scaleAnimation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
         scaleAnimation.values = [0, 0, 1.3, 2.1]
         scaleAnimation.duration = duration
         
@@ -81,7 +81,7 @@ class ANActivityIndicatorAnimationOrbit: ANActivityIndicatorAnimation {
         let timingFunction = CAMediaTimingFunction(controlPoints: 0.19, 1, 0.22, 1)
         
         opacityAnimation.keyTimes = [0, 0.55, 0.65, 1]
-        scaleAnimation.timingFunctions = [CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear), timingFunction]
+      scaleAnimation.timingFunctions = [CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear), timingFunction]
         opacityAnimation.values = [0.7, 0.7, 0, 0]
         opacityAnimation.duration = duration
         
@@ -108,7 +108,7 @@ class ANActivityIndicatorAnimationOrbit: ANActivityIndicatorAnimation {
     func coreInLayer(_ layer: CALayer, size: CGSize, color: UIColor) {
         let inTimingFunction = CAMediaTimingFunction(controlPoints: 0.7, 0, 1, 0.5)
         let outTimingFunction = CAMediaTimingFunction(controlPoints: 0, 0.7, 0.5, 1)
-        let standByTimingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
+      let standByTimingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
         
         // Scale animation
         let scaleAnimation = CAKeyframeAnimation(keyPath: "transform.scale")
