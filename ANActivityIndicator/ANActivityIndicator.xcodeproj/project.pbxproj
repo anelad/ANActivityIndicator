@@ -321,6 +321,7 @@
 				TargetAttributes = {
 					A1F821B82002815200DEB12B = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					A1F821C12002815200DEB12B = {
@@ -335,6 +336,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = A1F821AF2002815200DEB12B;
 			productRefGroup = A1F821BA2002815200DEB12B /* Products */;
@@ -601,7 +603,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.avorna.ANActivityIndicator;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -623,7 +625,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.avorna.ANActivityIndicator;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

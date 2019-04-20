@@ -25,7 +25,7 @@ public extension UIViewController {
      - parameter displayTimeThreshold: display time threshold to actually display UI blocker.
      - parameter minimumDisplayTime:   minimum display time of UI blocker.
      */
-    public final func showIndicator(
+  final func showIndicator(
         _ size: CGSize? = nil,
         message: String? = nil,
         messageFont: UIFont? = nil,
@@ -41,7 +41,7 @@ public extension UIViewController {
     /**
      Remove UI blocker.
      */
-    public final func hideIndicator() {
+  final func hideIndicator() {
         ANActivityIndicatorPresenter.shared.hideIndicator()
     }
 }
