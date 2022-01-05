@@ -1,8 +1,8 @@
 ANActivityIndicator
 ============
 ![Xcode 9.0+](https://img.shields.io/badge/Xcode-9.0%2B-blue.svg)
-![iOS 10.0+](https://img.shields.io/badge/iOS-10.0%2B-blue.svg)
-![Swift 4.0+](https://img.shields.io/badge/Swift-4.0%2B-blue.svg)
+![iOS 12.0+](https://img.shields.io/badge/iOS-10.0%2B-blue.svg)
+![Swift 5.0+](https://img.shields.io/badge/Swift-4.0%2B-blue.svg)
 [![Version](https://img.shields.io/cocoapods/v/ANActivityIndicator.svg)](http://cocoapods.org/pods/ANActivityIndicator)
 ![carthage](https://img.shields.io/badge/Carthage-notCompatible-red.svg)
 
@@ -23,7 +23,7 @@ It looks like gotnovik is not updating his repo and GTMYang's repo focuses on a 
 - Implemented with Swift
 
 ### between GTMActivityIndicatorView
-- Implemented with Swift 4
+- Implemented with Swift 5
 - Ready to use pre-built indicator animations. With GTMActivityIndicatorView, you have to add animations into your project manually.
 
 ## Added Features
@@ -35,9 +35,8 @@ Check [Pre-Built Animation Types](#pre-built-animation-types) section to see ani
 
 ![demo-gif](https://user-images.githubusercontent.com/5767654/34675823-d101708e-f49b-11e7-9b65-94c1a844ba3d.gif)
 # Requirements
-- XCode 9.x or higher
-- Swift 4.x
-- iOS 10.0 or higher
+- Swift 5
+- iOS 12.0 or higher
 
 # Installation
 
