@@ -1,10 +1,8 @@
 ANActivityIndicator
 ============
-![Xcode 9.0+](https://img.shields.io/badge/Xcode-9.0%2B-blue.svg)
 ![iOS 12.0+](https://img.shields.io/badge/iOS-10.0%2B-blue.svg)
 ![Swift 5.0+](https://img.shields.io/badge/Swift-4.0%2B-blue.svg)
 [![Version](https://img.shields.io/cocoapods/v/ANActivityIndicator.svg)](http://cocoapods.org/pods/ANActivityIndicator)
-![carthage](https://img.shields.io/badge/Carthage-notCompatible-red.svg)
 
 
 ANActivityIndicator is pre-built indicator animations library, based on [DGActivityIndicatorView](https://github.com/gontovnik/DGActivityIndicatorView) by [gotnovik](https://github.com/gontovnik) and [GTMActivityIndicatorView](https://github.com/GTMYang/GTMActivityIndicatorView) by [GTMYang](https://github.com/GTMYang) inspired from [loaders.css](https://github.com/ConnorAtherton/loaders.css) by [CONNOR ATHERTON](https://connoratherton.com).
