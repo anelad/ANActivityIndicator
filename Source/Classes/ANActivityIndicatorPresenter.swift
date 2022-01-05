@@ -210,9 +210,10 @@ public final class ANActivityIndicatorPresenter {
     private func hide() {
         guard let keyWindow = UIApplication.shared.keyWindow else { return }
         
-        for item in keyWindow.subviews
-            where item.restorationIdentifier == restorationIdentifier {
+        for item in keyWindow.subviews {
+            if let ri = item.restorationIdentifier, ri == restorationIdentifier {
                 item.removeFromSuperview()
+            }
         }
         showTimer?.invalidate()
         showTimer = nil
